@@ -1,0 +1,8 @@
+{
+  "name": "docqa-backend",
+  "version": "1.0.0",
+  "description": "Document QA Backend with AWS Bedrock",
+  "devDependencies": {
+    "serverless-python-requirements": "^6.0.0"
+  }
+}

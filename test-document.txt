@@ -1,0 +1,38 @@
+Tài liệu thử nghiệm về AWS Bedrock
+
+AWS Bedrock là một dịch vụ được quản lý hoàn toàn giúp bạn dễ dàng truy cập các mô hình nền tảng (foundation models) từ các công ty AI hàng đầu như Amazon, Anthropic, AI21 Labs, Cohere, Meta, và Stability AI thông qua một API duy nhất.
+
+Các tính năng chính của AWS Bedrock:
+
+1. Truy cập đa dạng mô hình AI
+- Amazon Titan: Mô hình ngôn ngữ và embedding của Amazon
+- Anthropic Claude: Mô hình hội thoại thông minh
+- AI21 Labs Jurassic: Mô hình ngôn ngữ mạnh mẽ
+- Cohere Command: Mô hình tạo văn bản và phân loại
+- Meta Llama: Mô hình ngôn ngữ mã nguồn mở
+- Stability AI: Mô hình tạo hình ảnh
+
+2. Bảo mật và quyền riêng tư
+- Dữ liệu không được sử dụng để huấn luyện mô hình
+- Mã hóa dữ liệu khi truyền và lưu trữ
+- Tích hợp với AWS IAM để quản lý quyền truy cập
+
+3. Tùy chỉnh mô hình
+- Fine-tuning với dữ liệu riêng
+- Retrieval Augmented Generation (RAG)
+- Prompt engineering
+
+4. Tích hợp dễ dàng
+- SDK cho nhiều ngôn ngữ lập trình
+- Tích hợp với các dịch vụ AWS khác
+- API RESTful đơn giản
+
+Ứng dụng thực tế:
+- Chatbot thông minh
+- Tóm tắt tài liệu
+- Tạo nội dung
+- Phân tích cảm xúc
+- Dịch thuật
+- Hỏi đáp tài liệu (Document QA)
+
+AWS Bedrock giúp các doanh nghiệp triển khai AI một cách nhanh chóng và an toàn mà không cần lo lắng về việc quản lý hạ tầng phức tạp.

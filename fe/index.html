@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document QA - AWS Bedrock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📄 Document QA với AWS Bedrock</h1>
+            <p>Sử dụng AI để phân tích tài liệu (PDF/TXT) và trả lời câu hỏi thông minh</p>
+        </header>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <h2>📤 Tải lên Tài liệu</h2>
+            <input type="file" id="fileInput" accept=".pdf,.txt" style="display: none;">
+            
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-content">
+                    <div class="upload-icon">📄</div>
+                    <h3>Kéo thả file PDF/TXT vào đây</h3>
+                    <p>hoặc <span class="highlight">click để chọn file</span></p>
+                    <small>Hỗ trợ PDF và TXT • Tối đa 10MB</small>
+                </div>
+            </div>
+            
+            <div class="upload-progress" id="uploadProgress" style="display: none;">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span id="progressText">Đang xử lý...</span>
+            </div>
+            
+            <div id="uploadStatus" class="upload-status">
+                <div class="status-icon">⏳</div>
+                <span>Chưa có tài liệu nào được tải lên</span>
+            </div>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat-section">
+            <h2>💬 Hỏi & Đáp với AI</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message assistant">
+                        <div class="message-avatar">🤖</div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <strong>Trợ lý AI</strong>
+                                <span class="message-time" id="currentTime"></span>
+                            </div>
+                            <p>Xin chào! Tôi có thể giúp bạn phân tích tài liệu. Hãy tải lên file PDF hoặc TXT để bắt đầu.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-input-container">
+                    <div class="chat-input">
+                        <input type="text" id="questionInput" placeholder="Nhập câu hỏi về tài liệu..." disabled>
+                        <button id="sendButton" class="send-button" disabled>
+                            <span class="button-text">Gửi</span>
+                            <span class="button-icon">📤</span>
+                        </button>
+                    </div>
+                    <div class="chat-hint">
+                        💡 Bạn có thể hỏi về nội dung, tóm tắt, hoặc tìm thông tin cụ thể trong tài liệu
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Session Info -->
+        <div class="session-info" id="sessionInfo" style="display: none;">
+            <div class="session-badge">
+                <span>🆔 Session ID: </span>
+                <code id="sessionId"></code>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Powered by AWS Serverless + Bedrock RAG • Built with ❤️</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

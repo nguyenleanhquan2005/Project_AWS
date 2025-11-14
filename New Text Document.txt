@@ -1,0 +1,4 @@
+Frontend: S3 Static Website
+Backend: Lambda + API Gateway
+AI: Lambda + FAISS
+Database: DynamoDB
