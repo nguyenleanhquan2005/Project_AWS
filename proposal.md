@@ -40,7 +40,7 @@ We propose a **Serverless RAG-based Chatbot** using **AWS Bedrock (Amazon Titan)
 
 The platform employs a modern serverless architecture to ensure scalability, security, and performance.
 
-![Architecture](/images/image_proposal.png)
+![Architecture](/Images/image_proposal.png)
 ### AWS Services Used
 
 - **AWS Bedrock**: Provides the Foundation Models (Amazon Titan) for embeddings and text generation.
